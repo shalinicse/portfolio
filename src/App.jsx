@@ -9,6 +9,7 @@ import RRB from "./assets/rrb.jpeg";
 import LAB from "./assets/lab.jpeg";
 import React from "react";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 const skills = [
   "React.js",
@@ -28,22 +29,23 @@ const projects = [
   {
     name: "Lab Portal",
     desc: "Interactive dashboards with React.js, ApexCharts & Redux Toolkit; optimized UI & API integrations.",
-    src: { LAB },
+    src: LAB,
   },
   {
     name: "Rent Read Buy",
-    desc: "A web-based platform that enables users to search and order books seamlessly. Users can locate specific titles through an intuitive search interface, confirm delivery addresses, and complete transactions using multiple payment methods, including cash on delivery. Once an order is placed, books are delivered within 2–3 days, ensuring a smooth and reliable user experience.",
-    src: { RRB },
+    desc: "A web-based platform that enables users to search and order books seamlessly. Users can locate specific titles through an intuitive search interface, confirm delivery addresses, and complete transactions using multiple payment methods, including cash on delivery.",
+    src: RRB,
+
   },
   {
     name: "CampusCredo",
     desc: "Digital education platform with Formik & React Charts for application management.",
-    src: { CampusCredo },
+    src: CampusCredo,
   },
   {
     name: "CLEBER - Car Service Web App",
-    desc: "Internationalized booking platform with vehicle management, scheduling & DMS integration.",
-    src: { CarService },
+    desc: "Developed an online car service booking platform (for a Mexican client) with internationalization, enabling users to add vehicles, schedule/reschedule services, and integrate vehicle search with DMS for seamless service management.",
+    src: CarService,
   },
 ];
 
@@ -78,35 +80,9 @@ function App() {
       </div>
 
       {/* Contact */}
-      <section
-        id="contact"
-        className="bg-gradient-to-r from-purple-600 to-blue-600 py-20 px-6 text-white text-center"
-      >
-        <h3 className="text-3xl font-bold mb-6">Get In Touch</h3>
-        <p className="mb-6">Interested in working together? Let’s connect.</p>
-        <div className="flex justify-center gap-6">
-          <a
-            href="mailto:shalinishukla.bjs@gmail.com"
-            className="hover:underline"
-          >
-            📧 Email
-          </a>
-          <a
-            href="https://github.com/shalinicse"
-            target="_blank"
-            className="hover:underline"
-          >
-            💻 GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/shalini-shukla-cs"
-            target="_blank"
-            className="hover:underline"
-          >
-            🔗 LinkedIn
-          </a>
-        </div>
-      </section>
+      <div>
+        <Contact />
+      </div>
 
       {/* Footer */}
       <footer className="py-6 text-center text-gray-500 text-sm">

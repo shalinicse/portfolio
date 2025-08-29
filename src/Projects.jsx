@@ -1,6 +1,7 @@
 import React from "react";
 
 const Projects = ({ projects }) => {
+  console.log(projects)
   return (
     <section
       id="projects"
